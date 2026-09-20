@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crucero a Bahamas · 15-19 de marzo 2027 | Mujer es Evolución · InCruises</title>
+  <meta name="description" content="Nos vamos a Bahamas... ¿vienes? Crucero de 4 días desde Miami: Nassau, día de navegación y Ocean Cay. Sola, con amigas, en pareja o en familia. Desde $12,500 MXN con plan de pagos." />
+  <meta name="theme-color" content="#0e94a0" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nos vamos a Bahamas... ¿vienes?" />
+  <meta property="og:description" content="Crucero de 4 días desde Miami. Deja de posponer ese viaje. 15 al 19 de marzo de 2027." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1562036861-44811e0b4481?auto=format&fit=crop&w=1200&q=80" />
+
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#152238',
+              turquoise: '#14b8c4',
+              turquoisedark: '#0d8e98',
+              turquoisesoft: '#e3f8f9',
+              pink: '#e0538b',
+              pinkdark: '#c93f74',
+              pinksoft: '#fdecf3',
+              purple: '#5b3b8c',
+              purpledark: '#432c6b',
+              purplesoft: '#f2ecfa',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style type="text/tailwindcss">
+    @layer base {
+      html, body { overflow-x: hidden; max-width: 100%; }
+      body { font-family: 'Poppins', sans-serif; }
+      h1, h2, h3, h4 { letter-spacing: -0.01em; }
+      section[id] { scroll-margin-top: 88px; }
+    }
+    @layer components {
+      .container-bh { @apply max-w-7xl mx-auto px-6; }
+      .eyebrow { @apply inline-flex items-center gap-2 text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-brand-pink; }
+      .section-title { @apply text-2xl md:text-4xl font-black text-brand-navy leading-tight; }
+      .lead { @apply text-base md:text-lg text-slate-600 leading-relaxed; }
+
+      .cta-primary { @apply inline-flex items-center justify-center gap-2 bg-brand-turquoise hover:bg-brand-turquoisedark text-white font-extrabold px-8 py-4 rounded-full shadow-[0_12px_30px_-8px_rgba(20,184,196,0.55)] transition-all duration-300 hover:-translate-y-0.5; }
+      .cta-secondary { @apply inline-flex items-center justify-center gap-2 border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-bold px-8 py-4 rounded-full transition-all duration-300; }
+
+      .card { @apply bg-white rounded-2xl border border-slate-100 shadow-[0_10px_40px_-15px_rgba(21,34,56,0.15)]; }
+      .icon-badge { @apply w-14 h-14 rounded-2xl bg-brand-turquoisesoft text-brand-turquoisedark flex items-center justify-center shrink-0; }
+    }
+    .iti { width: 100%; display: block; }
+    .iti__flag-container { padding-left: 0.5rem; z-index: 20; }
+    #whatsapp { padding-left: 4.5rem !important; }
+
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    .js-reveal [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .js-reveal [data-reveal].in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .js-reveal [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-pink selection:text-white">
+
+  <!-- ================= NAV STICKY ================= -->
+  <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="container-bh h-16 flex items-center justify-between gap-4">
+      <a href="#inicio" class="flex items-center gap-3 shrink-0">
+        <img src="logo.png" alt="Mujer es Evolución" class="w-11 h-11 object-contain" />
+        <span class="hidden sm:block w-px h-9 bg-slate-200"></span>
+        <img src="logo-incruises.png" alt="InCruises" class="hidden sm:block h-9 object-contain" />
+        <span class="leading-none">
+          <span class="block text-sm font-black text-brand-navy">BAHAMAS · MARZO 2027</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#experiencia" class="hover:text-brand-pink transition-colors">Experiencia</a>
+        <a href="#ruta" class="hover:text-brand-pink transition-colors">Ruta</a>
+        <a href="#incluye" class="hover:text-brand-pink transition-colors">Qué incluye</a>
+        <a href="#precio" class="hover:text-brand-pink transition-colors">Precio</a>
+      </div>
+      <a href="#reservar" class="cta-primary !px-5 !py-2.5 text-xs md:text-sm">
+        <i data-lucide="anchor" class="w-4 h-4"></i><span class="hidden xs:inline">Sí, quiero ir</span><span class="xs:hidden">Ir a Bahamas</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/524423233949?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20viaje%20a%20Bahamas%20(15-19%20de%20marzo%202027)"
+     target="_blank" rel="noopener"
+     aria-label="Escríbenos por WhatsApp"
+     class="fixed bottom-24 md:bottom-6 right-5 md:right-6 bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_30px_rgba(37,211,102,0.45)] hover:bg-[#20bd5a] transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 z-50 flex items-center justify-center">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Barra CTA fija sólo móvil -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-slate-200 px-4 py-3 flex items-center gap-3">
+    <div class="leading-none">
+      <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Por persona</p>
+      <p class="text-lg font-black text-brand-turquoisedark">$12,500 <span class="text-xs text-slate-400 font-semibold">MXN</span></p>
+    </div>
+    <a href="#reservar" class="cta-primary flex-1 !py-3 text-sm">Sí, quiero ir a Bahamas</a>
+  </div>
+
+  <!-- ================= 1. HERO / GANCHO ================= -->
+  <header id="inicio" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1562036861-44811e0b4481?auto=format&fit=crop&w=1920&q=80" alt="Playa de aguas turquesa en el Caribe" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-navy/40 to-brand-navy/10"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-navy/60 via-transparent to-transparent"></div>
+    </div>
+
+    <div class="container-bh min-h-[86vh] md:min-h-[92vh] flex flex-col justify-end pb-14 md:pb-20 pt-32">
+      <div class="max-w-2xl" data-reveal>
+        <span class="eyebrow !text-brand-turquoise mb-4 !text-white/90 bg-white/10 backdrop-blur px-4 py-2 rounded-full w-fit">
+          <i data-lucide="calendar-days" class="w-4 h-4"></i> 15 al 19 de marzo de 2027 · Salida desde Miami
+        </span>
+        <h1 class="text-4xl md:text-6xl font-black text-white leading-[1.08] mb-5 drop-shadow-sm">
+          Nos vamos a Bahamas<span class="text-brand-turquoise">...</span> ¿vienes?
+        </h1>
+        <p class="text-lg md:text-xl text-white/90 leading-relaxed mb-3 max-w-xl">
+          Una experiencia para dejar de posponer ese viaje que llevas tiempo queriendo hacer.
+        </p>
+        <p class="text-white/75 mb-8 max-w-xl">
+          Ven sola, con amigas, en pareja o en familia. Lo importante es que esta vez sí hagas el viaje.
+        </p>
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          <a href="#reservar" class="cta-primary">
+            <i data-lucide="sparkles" class="w-5 h-5"></i> Quiero vivir esta experiencia
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. CONEXIÓN CON EL DOLOR ================= -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container-bh">
+      <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
+        <span class="eyebrow mb-3">¿Te encuentras en este momento de tu vida?</span>
+        <h2 class="section-title">¿Cuántas veces has dicho: “algún día quiero hacer un crucero”?</h2>
+        <p class="lead mt-4">Y ese día se sigue aplazando.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4"><i data-lucide="users" class="w-6 h-6"></i></div>
+          <p class="text-sm text-slate-600">Porque no encuentras con quién viajar.</p>
+        </div>
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4"><i data-lucide="calendar-x" class="w-6 h-6"></i></div>
+          <p class="text-sm text-slate-600">Porque las fechas nunca coinciden.</p>
+        </div>
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4"><i data-lucide="list-checks" class="w-6 h-6"></i></div>
+          <p class="text-sm text-slate-600">Porque organizar todo parece complicado.</p>
+        </div>
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4"><i data-lucide="briefcase" class="w-6 h-6"></i></div>
+          <p class="text-sm text-slate-600">Porque primero están el trabajo, los hijos, los compromisos y los pendientes.</p>
+        </div>
+        <div class="card p-6 text-center sm:col-span-2 lg:col-span-1" data-reveal>
+          <div class="icon-badge mx-auto mb-4"><i data-lucide="hourglass" class="w-6 h-6"></i></div>
+          <p class="text-sm text-slate-600">O porque simplemente estás esperando el momento perfecto.</p>
+        </div>
+      </div>
+
+      <div class="bg-brand-navy rounded-3xl p-8 md:p-10 text-center max-w-3xl mx-auto" data-reveal>
+        <p class="text-lg md:text-xl font-bold text-white leading-relaxed">
+          Esta vez queremos hacerlo diferente. Ya tenemos destino. Ya tenemos fecha.
+          Ya tenemos un grupo preparándose para vivirlo.
+          <span class="text-brand-turquoise">Solo falta que decidas si tú también vienes.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. LA EXPERIENCIA ================= -->
+  <section id="experiencia" class="py-16 md:py-24 bg-brand-purplesoft">
+    <div class="container-bh grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div data-reveal class="order-2 lg:order-1 relative">
+        <img src="https://images.unsplash.com/photo-1702830499141-a0634d87d6af?auto=format&fit=crop&w=1200&q=80" alt="Vista al mar desde el balcón de un camarote" loading="lazy" class="rounded-3xl w-full object-cover aspect-[4/3] shadow-xl border border-white" />
+      </div>
+      <div data-reveal class="order-1 lg:order-2">
+        <span class="eyebrow mb-3">La experiencia</span>
+        <h2 class="section-title mb-6">4 días para cambiar la rutina por el Caribe</h2>
+        <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+          <p>Imagina despertar, salir al balcón de tu camarote y encontrarte con el mar. Desayunar sin prisas. Conocer playas de aguas turquesa. Disfrutar de una cena, un espectáculo, música, entretenimiento y terminar el día navegando.</p>
+          <p>Pero, sobre todo, darte la oportunidad de vivir algo diferente.</p>
+          <p>Puedes venir sola e integrarte al grupo, viajar con una amiga, con tu pareja o convertirlo en unas vacaciones en familia.</p>
+        </div>
+        <p class="mt-6 text-lg font-black text-brand-purple">Tú decides con quién. Nosotros ponemos la experiencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. RUTA DEL CRUCERO ================= -->
+  <section id="ruta" class="py-16 md:py-24 bg-white">
+    <div class="container-bh">
+      <div class="text-center max-w-2xl mx-auto mb-14" data-reveal>
+        <span class="eyebrow mb-3">Nuestra ruta por el Caribe</span>
+        <h2 class="section-title">4 días, 3 paradas inolvidables</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div class="card overflow-hidden" data-reveal>
+          <img src="https://images.unsplash.com/photo-1617170709172-d19ee6cd406c?auto=format&fit=crop&w=800&q=80" alt="Miami, Florida" loading="lazy" class="w-full h-36 object-cover" />
+          <div class="p-5">
+            <p class="text-[10px] font-bold text-brand-pink tracking-widest uppercase mb-1">Día 1</p>
+            <h3 class="font-black text-brand-navy text-sm mb-1">Miami, Florida</h3>
+            <p class="text-xs text-slate-500">Aquí comienza nuestra aventura.</p>
+          </div>
+        </div>
+        <div class="card overflow-hidden" data-reveal>
+          <img src="https://images.unsplash.com/photo-1641139404177-bd806ce296bc?auto=format&fit=crop&w=800&q=80" alt="Nassau, Bahamas" loading="lazy" class="w-full h-36 object-cover" />
+          <div class="p-5">
+            <p class="text-[10px] font-bold text-brand-pink tracking-widest uppercase mb-1">Día 2</p>
+            <h3 class="font-black text-brand-navy text-sm mb-1">Nassau, Bahamas</h3>
+            <p class="text-xs text-slate-500">Playas, mar turquesa, cultura caribeña y tiempo para descubrir uno de los destinos más conocidos de Bahamas.</p>
+          </div>
+        </div>
+        <div class="card overflow-hidden" data-reveal>
+          <img src="https://images.unsplash.com/photo-1562672752-d6c528de7ba9?auto=format&fit=crop&w=800&q=80" alt="Día de navegación a bordo del crucero" loading="lazy" class="w-full h-36 object-cover" />
+          <div class="p-5">
+            <p class="text-[10px] font-bold text-brand-pink tracking-widest uppercase mb-1">Día 3</p>
+            <h3 class="font-black text-brand-navy text-sm mb-1">Día de navegación</h3>
+            <p class="text-xs text-slate-500">Un día para disfrutar el barco: albercas, gastronomía, actividades, entretenimiento o simplemente descansar mirando el mar.</p>
+          </div>
+        </div>
+        <div class="card overflow-hidden" data-reveal>
+          <img src="https://images.unsplash.com/photo-1709120221817-52ccbdc2e91d?auto=format&fit=crop&w=800&q=80" alt="Ocean Cay, Bahamas" loading="lazy" class="w-full h-36 object-cover" />
+          <div class="p-5">
+            <p class="text-[10px] font-bold text-brand-pink tracking-widest uppercase mb-1">Día 4</p>
+            <h3 class="font-black text-brand-navy text-sm mb-1">Ocean Cay, Bahamas</h3>
+            <p class="text-xs text-slate-500">Una isla de aguas cristalinas y playas de arena blanca para disfrutar uno de los días más especiales del viaje.</p>
+          </div>
+        </div>
+        <div class="card overflow-hidden" data-reveal>
+          <img src="https://images.unsplash.com/photo-1617170788758-725d9475a32b?auto=format&fit=crop&w=800&q=80" alt="Regreso a Miami" loading="lazy" class="w-full h-36 object-cover" />
+          <div class="p-5">
+            <p class="text-[10px] font-bold text-brand-pink tracking-widest uppercase mb-1">Día 5</p>
+            <h3 class="font-black text-brand-navy text-sm mb-1">Miami, Florida</h3>
+            <p class="text-xs text-slate-500">Regresamos después de cuatro días de experiencias y recuerdos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. QUÉ INCLUYE ================= -->
+  <section id="incluye" class="py-16 md:py-24 bg-brand-turquoisesoft">
+    <div class="container-bh">
+      <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
+        <span class="eyebrow mb-3">¿Qué incluye?</span>
+        <h2 class="section-title">Tú ocúpate de disfrutar.</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="card p-8" data-reveal>
+          <h3 class="flex items-center gap-2 font-black text-brand-turquoisedark text-lg mb-5"><i data-lucide="check-circle-2" class="w-6 h-6"></i> Incluye</h3>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Camarote con balcón</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Desayunos, comidas y cenas</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Alimentos incluidos dentro del crucero</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Espectáculos y entretenimiento diario</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Impuestos</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Propinas</li>
+          </ul>
+        </div>
+        <div class="card p-8" data-reveal>
+          <h3 class="flex items-center gap-2 font-black text-brand-pinkdark text-lg mb-5"><i data-lucide="x-circle" class="w-6 h-6"></i> No incluye</h3>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pinkdark shrink-0"></i> Vuelos hacia y desde Miami</li>
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pinkdark shrink-0"></i> Traslados</li>
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pinkdark shrink-0"></i> Excursiones en los destinos</li>
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pinkdark shrink-0"></i> Bebidas especiales</li>
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pinkdark shrink-0"></i> Seguro de viaje</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. A TU MANERA ================= -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container-bh">
+      <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
+        <span class="eyebrow mb-3">Una experiencia que puedes vivir a tu manera</span>
+        <h2 class="section-title">¿Con quién quieres vivir Bahamas?</h2>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4 !bg-brand-pinksoft !text-brand-pinkdark"><i data-lucide="user" class="w-6 h-6"></i></div>
+          <h3 class="font-black text-brand-navy text-sm mb-1">¿Sola?</h3>
+          <p class="text-xs text-slate-500">Puedes integrarte al grupo y vivir la experiencia acompañada de otras viajeras.</p>
+        </div>
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4"><i data-lucide="users" class="w-6 h-6"></i></div>
+          <h3 class="font-black text-brand-navy text-sm mb-1">¿Con tus amigas?</h3>
+          <p class="text-xs text-slate-500">Compartan un camarote y conviertan este viaje en una historia que van a recordar durante años.</p>
+        </div>
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4 !bg-brand-purplesoft !text-brand-purple"><i data-lucide="heart" class="w-6 h-6"></i></div>
+          <h3 class="font-black text-brand-navy text-sm mb-1">¿En pareja?</h3>
+          <p class="text-xs text-slate-500">También pueden formar parte de esta experiencia.</p>
+        </div>
+        <div class="card p-6 text-center" data-reveal>
+          <div class="icon-badge mx-auto mb-4"><i data-lucide="home" class="w-6 h-6"></i></div>
+          <h3 class="font-black text-brand-navy text-sm mb-1">¿En familia?</h3>
+          <p class="text-xs text-slate-500">Por supuesto. Pueden disfrutar juntos del crucero y de los destinos.</p>
+        </div>
+      </div>
+      <p class="text-center text-lg font-black text-brand-purple max-w-2xl mx-auto" data-reveal>No importa tanto con quién llegues. Lo importante es que te permitas vivirlo.</p>
+    </div>
+  </section>
+
+  <!-- ================= 7. PARA QUIÉN ES / NO ES ================= -->
+  <section id="para-quien" class="py-16 md:py-24 bg-brand-purplesoft">
+    <div class="container-bh">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="card p-8 md:p-10" data-reveal>
+          <h2 class="text-xl md:text-2xl font-black text-brand-navy mb-6 flex items-center gap-3"><i data-lucide="heart-handshake" class="w-7 h-7 text-brand-turquoisedark"></i> Es para ti si…</h2>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Llevas tiempo queriendo conocer Bahamas o vivir tu primer crucero.</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Quieres salir de la rutina y regalarte una experiencia diferente.</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> No quieres seguir esperando a encontrar con quién viajar.</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Quieres viajar con amigas, pareja o familia.</li>
+            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Valoras coleccionar experiencias y recuerdos.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl p-8 md:p-10 bg-brand-navy text-white" data-reveal>
+          <h2 class="text-xl md:text-2xl font-black mb-6 flex items-center gap-3"><i data-lucide="alert-triangle" class="w-7 h-7 text-brand-pink"></i> No es para ti si…</h2>
+          <ul class="space-y-3 text-sm text-white/85">
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pink shrink-0"></i> Buscas un viaje completamente personalizado o privado.</li>
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pink shrink-0"></i> No estás dispuesta a respetar las condiciones de ocupación del camarote.</li>
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pink shrink-0"></i> Buscas que vuelos, excursiones y todos los gastos adicionales estén incluidos.</li>
+            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-brand-pink shrink-0"></i> No puedes comprometerte con las fechas y condiciones de pago.</li>
+          </ul>
+          <p class="mt-8 text-lg font-black text-brand-turquoise">Bahamas te muestra el camino. Tú tendrás que recorrerlo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8+9. PRECIO Y PLAN DE PAGOS ================= -->
+  <section id="precio" class="py-16 md:py-24 bg-white">
+    <div class="container-bh">
+      <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
+        <span class="eyebrow mb-3">¿Cuánto cuesta vivir esta experiencia?</span>
+        <h2 class="section-title">Un plan de pagos a tu ritmo</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl" data-reveal>
+        <div class="bg-gradient-to-br from-brand-purple to-brand-turquoisedark text-white p-8 md:p-12 text-center">
+          <p class="text-sm font-bold tracking-widest uppercase text-white/70 mb-2">Por persona</p>
+          <p class="text-5xl md:text-6xl font-black mb-2">$12,500 <span class="text-xl font-bold text-white/70">MXN</span></p>
+          <p class="text-sm text-white/80 mb-6">Camarote con balcón · Impuestos y propinas incluidos</p>
+          <p class="inline-block bg-white/15 border border-white/25 rounded-full px-5 py-2 text-sm font-bold">Aparta tu lugar con $3,000 MXN</p>
+        </div>
+        <div class="bg-white p-8 md:p-12">
+          <p class="text-slate-600 leading-relaxed text-sm md:text-base mb-8 text-center">No tienes que pagarlo todo hoy. Tenemos un plan de pagos mensuales de septiembre de 2026 a febrero de 2027, y podemos adecuar un plan de acuerdo con tus necesidades.</p>
+          <div class="grid sm:grid-cols-3 gap-4 mb-8">
+            <div class="bg-brand-turquoisesoft rounded-2xl p-5 text-center">
+              <div class="w-10 h-10 rounded-full bg-brand-turquoise text-white flex items-center justify-center font-black mx-auto mb-3">1</div>
+              <p class="text-[11px] font-bold text-slate-500 uppercase tracking-wide mb-1">Aparta tu lugar</p>
+              <p class="font-black text-brand-navy">$3,000 MXN</p>
+              <p class="text-xs text-slate-500 mt-1">Hoy</p>
+            </div>
+            <div class="bg-brand-turquoisesoft rounded-2xl p-5 text-center">
+              <div class="w-10 h-10 rounded-full bg-brand-turquoise text-white flex items-center justify-center font-black mx-auto mb-3">2</div>
+              <p class="text-[11px] font-bold text-slate-500 uppercase tracking-wide mb-1">50% liquidado</p>
+              <p class="font-black text-brand-navy">15 dic 2026</p>
+            </div>
+            <div class="bg-brand-turquoisesoft rounded-2xl p-5 text-center">
+              <div class="w-10 h-10 rounded-full bg-brand-turquoise text-white flex items-center justify-center font-black mx-auto mb-3">3</div>
+              <p class="text-[11px] font-bold text-slate-500 uppercase tracking-wide mb-1">Saldo total</p>
+              <p class="font-black text-brand-navy">28 feb 2027</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#reservar" class="cta-primary"><i data-lucide="sparkles" class="w-5 h-5"></i> Quiero conocer mi plan de pagos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto mt-8 space-y-3" data-reveal>
+        <p class="text-xs md:text-sm text-slate-500 bg-slate-50 border border-slate-100 rounded-xl p-4 leading-relaxed">
+          El precio de $12,500 MXN por persona está calculado con base en ocupación de 4 personas por camarote. La reservación y el precio pactado están sujetos a completar dicha ocupación. ¿Viajan en familia o tienen una necesidad de alojamiento diferente? Consúltanos para revisar las opciones disponibles.
+        </p>
+        <p class="text-xs md:text-sm text-slate-400 leading-relaxed px-4">
+          La política de cancelación y condiciones completas de reservación se entregarán en un documento independiente antes de realizar el apartado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. SECCIÓN EMOCIONAL ================= -->
+  <section class="relative py-24 md:py-32 overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1675826025405-682ebe9021e8?auto=format&fit=crop&w=1600&q=80" alt="Amigas celebrando en la playa al atardecer" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-brand-navy/70"></div>
+    </div>
+    <div class="container-bh text-center" data-reveal>
+      <h2 class="text-2xl md:text-4xl font-black text-white mb-4 leading-tight">Los viajes terminan.<br>Lo que viviste en ellos, no.</h2>
+      <p class="text-white/85 max-w-2xl mx-auto leading-relaxed mb-6">
+        Tal vez en unos años no recuerdes cuánto costó el viaje. Pero probablemente recordarás el momento en que viste el Caribe desde tu balcón, las risas durante la cena, esa playa que parecía irreal, las personas que conociste y aquella sensación de pensar:
+      </p>
+      <p class="text-2xl md:text-3xl font-black text-brand-turquoise">“Qué bueno que sí vine.”</p>
+    </div>
+  </section>
+
+  <!-- ================= 11+12. CIERRE + FORMULARIO ================= -->
+  <section id="reservar" class="py-16 md:py-24 bg-brand-purplesoft">
+    <div class="container-bh grid lg:grid-cols-2 gap-12 items-start">
+      <div data-reveal>
+        <span class="eyebrow mb-3">Marzo 2027</span>
+        <h2 class="section-title mb-6">Bahamas nos espera.</h2>
+        <ul class="space-y-3 text-slate-700 mb-8">
+          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Tienes varios meses para organizarte.</li>
+          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Tienes un plan de pagos.</li>
+          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-turquoisedark shrink-0"></i> Tienes un grupo con quien vivirlo.</li>
+        </ul>
+        <p class="lead mb-2">Ahora solo falta tomar la decisión.</p>
+        <p class="text-lg font-black text-brand-purple">Aparta tu lugar con $3,000 MXN.</p>
+      </div>
+
+      <div class="card p-8 md:p-10" data-reveal>
+        <h3 class="text-lg font-black text-brand-navy mb-1">Sí, quiero ir a Bahamas</h3>
+        <p class="text-sm text-slate-500 mb-6">Déjanos tus datos y te contactaremos por WhatsApp para explicarte disponibilidad, camarotes, formas de pago y resolver todas tus dudas.</p>
+
+        <form id="formBahamas" onsubmit="enviarWhatsApp(event)" class="space-y-5" novalidate>
+          <div>
+            <label for="nombre" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">Nombre *</label>
+            <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre completo"
+              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise" />
+          </div>
+          <div>
+            <label for="whatsapp" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">WhatsApp *</label>
+            <input id="whatsapp" name="whatsapp" type="tel" required placeholder="10 dígitos" />
+          </div>
+          <div>
+            <label for="correo" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">Correo electrónico *</label>
+            <input id="correo" name="correo" type="email" required placeholder="tu@correo.com"
+              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise" />
+          </div>
+          <div>
+            <label for="conQuien" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">¿Con quién te gustaría viajar? *</label>
+            <select id="conQuien" name="conQuien" required
+              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise bg-white">
+              <option value="" disabled selected>Elige una opción</option>
+              <option value="Sola">Sola</option>
+              <option value="Amigas">Amigas</option>
+              <option value="Pareja">Pareja</option>
+              <option value="Familia">Familia</option>
+              <option value="Aún no lo sé">Aún no lo sé</option>
+            </select>
+          </div>
+
+          <button type="submit" id="btnEnviar" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold py-4 rounded-xl flex items-center justify-center gap-3 mt-2 transition-all transform hover:-translate-y-0.5 shadow-[0_8px_20px_rgba(37,211,102,0.35)]">
+            <i data-lucide="message-circle" class="w-5 h-5"></i> Sí, quiero ir a Bahamas
+          </button>
+          <p class="text-[11px] text-slate-400 text-center">Al enviar, se abrirá WhatsApp para continuar tu registro de forma personalizada.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-brand-navy text-white/80 pt-14 pb-8">
+    <div class="container-bh">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 pb-10 border-b border-white/10">
+        <div class="flex items-center gap-4">
+          <img src="logo.png" alt="Mujer es Evolución" class="w-16 h-16 object-contain bg-white rounded-xl p-2" />
+          <img src="logo-incruises.png" alt="InCruises" class="h-12 object-contain bg-white rounded-xl px-3 py-2" />
+          <div>
+            <p class="font-black text-white text-sm">Mujer es Evolución</p>
+            <p class="text-xs text-white/50">A través de Mujer es Evolución te damos acompañamiento y asesoría para vivir esta experiencia con InCruises.</p>
+          </div>
+        </div>
+        <a href="https://wa.me/524423233949?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20viaje%20a%20Bahamas" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold px-5 py-2.5 rounded-full text-sm transition-colors w-fit">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Escríbenos por WhatsApp
+        </a>
+      </div>
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/40">
+        <p>© <span id="year"></span> Mujer es Evolución. Todos los derechos reservados.</p>
+        <p class="text-center md:text-right">La política de cancelación y condiciones completas de reservación se entregan en un documento independiente.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ---------- Año footer ---------- */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ---------- Iconos ---------- */
+    lucide.createIcons();
+
+    /* ---------- Reveal al hacer scroll (ligero, con failsafe total) ---------- */
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var nodes = document.querySelectorAll('[data-reveal]');
+      if (reduce || !('IntersectionObserver' in window)) { return; }
+      document.documentElement.classList.add('js-reveal');
+      try {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+          });
+        }, { rootMargin: '0px 0px -8% 0px' });
+        var vh = window.innerHeight;
+        nodes.forEach(function (el) {
+          var r = el.getBoundingClientRect();
+          if (r.top < vh && r.bottom > 0) { el.classList.add('in'); }
+          else { io.observe(el); }
+        });
+      } catch (e) {}
+      setTimeout(function () {
+        document.querySelectorAll('[data-reveal]:not(.in)').forEach(function (el) { el.classList.add('in'); });
+      }, 2000);
+    })();
+
+    /* ---------- intl-tel-input ---------- */
+    const whatsappField = document.querySelector("#whatsapp");
+    const whatsappInput = window.intlTelInput(whatsappField, {
+      preferredCountries: ["mx", "us", "co", "ar", "es"],
+      initialCountry: "mx",
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    /* ---------- Envío a WhatsApp del negocio con los datos de la lead ---------- */
+    const NEGOCIO_WHATSAPP = "524423233949";
+
+    /* Pega aquí la URL de tu Apps Script (Implementar > Nueva implementación > Aplicación web)
+       una vez que hayas creado el Sheet y pegado google-apps-script.gs. Mientras esté vacío,
+       el registro en Sheets simplemente se omite y el formulario sigue abriendo WhatsApp normal. */
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby6BjjpUm4GBOv9HdI0mj53A2jd-JUvCsSK5SZmq0vX2qrZQwEeyJmSUM5aIF228iIs8g/exec";
+
+    function enviarWhatsApp(event) {
+      event.preventDefault();
+      const btn = document.getElementById("btnEnviar");
+      const nombre = document.getElementById("nombre").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const conQuien = document.getElementById("conQuien").value;
+
+      if (!nombre || !correo || !conQuien) {
+        alert("Por favor completa todos los campos obligatorios.");
+        return;
+      }
+      if (!whatsappInput.isValidNumber()) {
+        alert("El número de WhatsApp no parece ser válido. Revisa el código de país.");
+        return;
+      }
+
+      const telefono = whatsappInput.getNumber();
+      const mensaje = `Hola, quiero información sobre el viaje a Bahamas (15-19 de marzo de 2027).%0A%0ANombre: ${encodeURIComponent(nombre)}%0AWhatsApp: ${encodeURIComponent(telefono)}%0ACorreo: ${encodeURIComponent(correo)}%0A¿Con quién me gustaría viajar?: ${encodeURIComponent(conQuien)}`;
+
+      btn.disabled = true;
+      btn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Abriendo WhatsApp...';
+      lucide.createIcons();
+
+      // Registro en Google Sheets (fire-and-forget: si falla o no está configurado, no bloquea el envío a WhatsApp)
+      if (APPS_SCRIPT_URL) {
+        fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ nombre, whatsapp: telefono, correo, conQuien })
+        }).catch(function () {});
+      }
+
+      window.open(`https://wa.me/${NEGOCIO_WHATSAPP}?text=${mensaje}`, "_blank");
+
+      setTimeout(function () {
+        btn.disabled = false;
+        btn.innerHTML = '<i data-lucide="message-circle" class="w-5 h-5"></i> Sí, quiero ir a Bahamas';
+        lucide.createIcons();
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
