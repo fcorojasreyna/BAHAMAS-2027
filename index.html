@@ -202,7 +202,7 @@
   <section id="experiencia" class="py-16 md:py-24 bg-brand-purplesoft">
     <div class="container-bh grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <div data-reveal class="order-2 lg:order-1 relative">
-        <img src="https://images.unsplash.com/photo-1702830499141-a0634d87d6af?auto=format&fit=crop&w=1200&q=80" alt="Vista al mar desde el balcón de un camarote" loading="lazy" class="rounded-3xl w-full object-cover aspect-[4/3] shadow-xl border border-white" />
+        <img src="bahamas-ia-balcon-camarote.jpg" alt="Vista al mar desde el balcón de un camarote" loading="lazy" class="rounded-3xl w-full object-cover aspect-[4/3] shadow-xl border border-white" />
       </div>
       <div data-reveal class="order-1 lg:order-2">
         <span class="eyebrow mb-3">La experiencia</span>
@@ -251,7 +251,7 @@
           </div>
         </div>
         <div class="card overflow-hidden" data-reveal>
-          <img src="https://images.unsplash.com/photo-1709120221817-52ccbdc2e91d?auto=format&fit=crop&w=800&q=80" alt="Ocean Cay, Bahamas" loading="lazy" class="w-full h-36 object-cover" />
+          <img src="bahamas-ia-ocean-cay.jpg" alt="Ocean Cay, Bahamas" loading="lazy" class="w-full h-36 object-cover" />
           <div class="p-5">
             <p class="text-[10px] font-bold text-brand-pink tracking-widest uppercase mb-1">Día 4</p>
             <h3 class="font-black text-brand-navy text-sm mb-1">Ocean Cay, Bahamas</h3>
@@ -419,7 +419,7 @@
   <!-- ================= 10. SECCIÓN EMOCIONAL ================= -->
   <section class="relative py-24 md:py-32 overflow-hidden">
     <div class="absolute inset-0 -z-10">
-      <img src="https://images.unsplash.com/photo-1675826025405-682ebe9021e8?auto=format&fit=crop&w=1600&q=80" alt="Amigas celebrando en la playa al atardecer" class="w-full h-full object-cover" />
+      <img src="bahamas-ia-amigas-celebrando.jpg" alt="Amigas celebrando en la playa al atardecer" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-brand-navy/70"></div>
     </div>
     <div class="container-bh text-center" data-reveal>
@@ -447,42 +447,56 @@
       </div>
 
       <div class="card p-8 md:p-10" data-reveal>
-        <h3 class="text-lg font-black text-brand-navy mb-1">Sí, quiero ir a Bahamas</h3>
-        <p class="text-sm text-slate-500 mb-6">Déjanos tus datos y te contactaremos por WhatsApp para explicarte disponibilidad, camarotes, formas de pago y resolver todas tus dudas.</p>
+        <!-- PASO 1: datos -->
+        <div id="pasoForm">
+          <h3 class="text-lg font-black text-brand-navy mb-1">Sí, quiero ir a Bahamas</h3>
+          <p class="text-sm text-slate-500 mb-6">Déjanos tus datos y en el siguiente paso eliges el día y la hora de tu llamada de 45 minutos.</p>
 
-        <form id="formBahamas" onsubmit="enviarWhatsApp(event)" class="space-y-5" novalidate>
-          <div>
-            <label for="nombre" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">Nombre *</label>
-            <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre completo"
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise" />
-          </div>
-          <div>
-            <label for="whatsapp" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">WhatsApp *</label>
-            <input id="whatsapp" name="whatsapp" type="tel" required placeholder="10 dígitos" />
-          </div>
-          <div>
-            <label for="correo" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">Correo electrónico *</label>
-            <input id="correo" name="correo" type="email" required placeholder="tu@correo.com"
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise" />
-          </div>
-          <div>
-            <label for="conQuien" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">¿Con quién te gustaría viajar? *</label>
-            <select id="conQuien" name="conQuien" required
-              class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise bg-white">
-              <option value="" disabled selected>Elige una opción</option>
-              <option value="Sola">Sola</option>
-              <option value="Amigas">Amigas</option>
-              <option value="Pareja">Pareja</option>
-              <option value="Familia">Familia</option>
-              <option value="Aún no lo sé">Aún no lo sé</option>
-            </select>
-          </div>
+          <form id="formBahamas" onsubmit="continuarAAgenda(event)" class="space-y-5" novalidate>
+            <div>
+              <label for="nombre" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">Nombre *</label>
+              <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre completo"
+                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise" />
+            </div>
+            <div>
+              <label for="whatsapp" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">WhatsApp *</label>
+              <input id="whatsapp" name="whatsapp" type="tel" required placeholder="10 dígitos"
+                class="w-full rounded-xl border border-slate-200 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise" />
+            </div>
+            <div>
+              <label for="correo" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">Correo electrónico *</label>
+              <input id="correo" name="correo" type="email" required placeholder="tu@correo.com"
+                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise" />
+            </div>
+            <div>
+              <label for="conQuien" class="block text-xs font-bold text-brand-navy uppercase mb-2 ml-1">¿Con quién te gustaría viajar? *</label>
+              <select id="conQuien" name="conQuien" required
+                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turquoise bg-white">
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="Sola">Sola</option>
+                <option value="Amigas">Amigas</option>
+                <option value="Pareja">Pareja</option>
+                <option value="Familia">Familia</option>
+                <option value="Aún no lo sé">Aún no lo sé</option>
+              </select>
+            </div>
 
-          <button type="submit" id="btnEnviar" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold py-4 rounded-xl flex items-center justify-center gap-3 mt-2 transition-all transform hover:-translate-y-0.5 shadow-[0_8px_20px_rgba(37,211,102,0.35)]">
-            <i data-lucide="message-circle" class="w-5 h-5"></i> Sí, quiero ir a Bahamas
-          </button>
-          <p class="text-[11px] text-slate-400 text-center">Al enviar, se abrirá WhatsApp para continuar tu registro de forma personalizada.</p>
-        </form>
+            <button type="submit" id="btnEnviar" class="cta-primary w-full !py-4 mt-2">
+              <i data-lucide="calendar-clock" class="w-5 h-5"></i> Continuar y elegir mi horario
+            </button>
+            <p class="text-[11px] text-slate-400 text-center">En el siguiente paso eliges el día y la hora de tu llamada.</p>
+          </form>
+        </div>
+
+        <!-- PASO 2: agenda la llamada -->
+        <div id="pasoAgenda" class="hidden">
+          <h3 class="text-lg font-black text-brand-navy mb-1">¡Listo<span id="nombreSaludo"></span>! Ahora elige tu horario</h3>
+          <p class="text-sm text-slate-500 mb-6">Selecciona el día y la hora que mejor te acomode para tu llamada de 45 minutos.</p>
+          <div class="rounded-2xl overflow-hidden border border-slate-100" style="min-height: 700px;">
+            <iframe id="calendarioIframe" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3dSmvyxwjPpCtWWeHAKiCJJ8oi39o-pJENuqNBRfLA_ItSJdvYwymt6kOgyYLzffqgV0OgWMa-?gv=true" style="border:0; width:100%; height:700px;"></iframe>
+          </div>
+          <p class="text-[11px] text-slate-400 text-center mt-4">¿Prefieres resolverlo por WhatsApp en vez de agendar? <a href="https://wa.me/524423233949?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20viaje%20a%20Bahamas" target="_blank" rel="noopener" class="text-brand-turquoisedark font-semibold underline">Escríbenos aquí</a>.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -549,15 +563,13 @@
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
 
-    /* ---------- Envío a WhatsApp del negocio con los datos de la lead ---------- */
-    const NEGOCIO_WHATSAPP = "524423233949";
-
     /* Pega aquí la URL de tu Apps Script (Implementar > Nueva implementación > Aplicación web)
        una vez que hayas creado el Sheet y pegado google-apps-script.gs. Mientras esté vacío,
-       el registro en Sheets simplemente se omite y el formulario sigue abriendo WhatsApp normal. */
+       el registro en Sheets simplemente se omite y el flujo sigue avanzando al calendario igual. */
     const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby6BjjpUm4GBOv9HdI0mj53A2jd-JUvCsSK5SZmq0vX2qrZQwEeyJmSUM5aIF228iIs8g/exec";
 
-    function enviarWhatsApp(event) {
+    /* ---------- Paso 1 (datos) -> registra el lead y avanza al Paso 2 (calendario) ---------- */
+    function continuarAAgenda(event) {
       event.preventDefault();
       const btn = document.getElementById("btnEnviar");
       const nombre = document.getElementById("nombre").value.trim();
@@ -574,13 +586,12 @@
       }
 
       const telefono = whatsappInput.getNumber();
-      const mensaje = `Hola, quiero información sobre el viaje a Bahamas (15-19 de marzo de 2027).%0A%0ANombre: ${encodeURIComponent(nombre)}%0AWhatsApp: ${encodeURIComponent(telefono)}%0ACorreo: ${encodeURIComponent(correo)}%0A¿Con quién me gustaría viajar?: ${encodeURIComponent(conQuien)}`;
 
       btn.disabled = true;
-      btn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Abriendo WhatsApp...';
+      btn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Un momento...';
       lucide.createIcons();
 
-      // Registro en Google Sheets (fire-and-forget: si falla o no está configurado, no bloquea el envío a WhatsApp)
+      // Registro en Google Sheets (fire-and-forget: si falla, igual se avanza al calendario)
       if (APPS_SCRIPT_URL) {
         fetch(APPS_SCRIPT_URL, {
           method: "POST",
@@ -589,13 +600,11 @@
         }).catch(function () {});
       }
 
-      window.open(`https://wa.me/${NEGOCIO_WHATSAPP}?text=${mensaje}`, "_blank");
-
-      setTimeout(function () {
-        btn.disabled = false;
-        btn.innerHTML = '<i data-lucide="message-circle" class="w-5 h-5"></i> Sí, quiero ir a Bahamas';
-        lucide.createIcons();
-      }, 1500);
+      const primerNombre = nombre.split(" ")[0];
+      document.getElementById("nombreSaludo").textContent = primerNombre ? ", " + primerNombre : "";
+      document.getElementById("pasoForm").classList.add("hidden");
+      document.getElementById("pasoAgenda").classList.remove("hidden");
+      document.getElementById("pasoAgenda").scrollIntoView({ behavior: "smooth", block: "start" });
     }
   </script>
 </body>
